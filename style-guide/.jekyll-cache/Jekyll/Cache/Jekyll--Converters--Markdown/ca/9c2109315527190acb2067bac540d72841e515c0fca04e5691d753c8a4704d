@@ -1,0 +1,64 @@
+I"�
+<h1 id="pre-processors">Pre Processors</h1>
+<p>ColourInstinct uses the SASS-CSS Preprocessor to convert SCSS to CSS. We considered using SCSS as very beneficials in terms of efficiency and expressiveness. Nesting had the advantage of being less time-consuming as well as ensuring a cleaner structured code. The highlight though was the use of variables which could be universally used throughout the files. In fact, it helps tremendously in normalizing the code and reducing redunancy. 
+More information: https://sass-lang.com/</p>
+
+<h1 id="file-structure">File Structure</h1>
+<p>In order to maintain a clearly structured overview of the files and their content, we used the 7-1 pattern. Besides the official recommendation by the Sass Guidelines, we also came to the conclusion that the division in different topics was very helpful to search and find specific code partials.</p>
+
+<p>Generally, the structure is as follows:
+<code class="language-plaintext highlighter-rouge">Codesnippet 7-1 Pattern 
+sass/  
+|  
+|– abstracts/  
+|   |– _variables.scss    # Sass Variablen  
+|   |– _functions.scss    # Sass Funktionen  
+|   |– _mixins.scss       # Sass Mixins  
+|   |– _placeholders.scss # Sass Platzhalter  
+|
+|– base/
+|   |– _reset.scss        # Reset/normalize  
+|   |– _typography.scss   # Regeln für Typographie  
+|   …                     # Etc.  
+|
+|– components/
+|   |– _buttons.scss      # Buttons  
+|   |– _carousel.scss     # Carousel  
+|   |– _cover.scss        # Cover  
+|   |– _dropdown.scss     # Dropdown  
+|   …                     # Etc.  
+|
+|– layout/
+|   |– _navigation.scss   # Navigation  
+|   |– _grid.scss         # Grid system  
+|   |– _header.scss       # Header  
+|   |– _footer.scss       # Footer  
+|   |– _sidebar.scss      # Sidebar  
+|   |– _forms.scss        # Forms  
+|   …                     # Etc.  
+|
+|– pages/
+|   |– _home.scss         # Home spezifische Styles  
+|   |– _contact.scss      # Contact spezifische styles  
+|   …                     # Etc.
+|
+|– themes/
+|   |– _theme.scss        # Default-Theme  
+|   |– _admin.scss        # Admin-Theme  
+|   …                     # Etc.  
+|
+|– vendors/
+|   |– _bootstrap.scss    # Bootstrap
+|   |– _jquery-ui.scss    # jQuery UI
+|   …                     # Etc.
+|
+|
+`– main.scss              # Haupt Sass-Datei
+</code></p>
+
+<p>More information: https://sass-guidelin.es/de/#das-7-1-muster</p>
+
+<h1 id="units">Units</h1>
+<p>Overall, the only units used in the project are <code class="language-plaintext highlighter-rouge">rem</code> for fonts and <code class="language-plaintext highlighter-rouge">em</code> for scalable images</p>
+
+:ET

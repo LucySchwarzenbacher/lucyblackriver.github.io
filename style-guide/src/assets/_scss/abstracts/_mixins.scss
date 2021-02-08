@@ -1,0 +1,528 @@
+@import "../utils/variables";
+
+// general
+@mixin vertically-aligned {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);    
+}
+
+@mixin horizontally-aligned {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin no-space {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin border {
+    border: solid 1.5px;
+    border-color: $dark_grey;
+}
+
+
+// icon in text
+@mixin icon__text--max {
+    max-width: 1rem;
+}
+
+@mixin icon__text__space {
+    padding-right: 0.5rem;
+}
+
+// space main
+@mixin main__space {
+    margin: auto;
+    padding-left: 1em;
+}
+
+@mixin main__space__box {
+    margin: auto;
+    padding-left: 1em;
+}
+
+// grid
+@mixin grid_layout {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+
+        &__container {
+            @include box__space__margin;
+
+            place-self: center;
+
+            a {
+                display: inline-block;
+                width: 100%;
+            }
+
+            .img--squared {
+                @include img--squared(18em);
+            }
+        }
+    }
+}
+
+@mixin flex_layout {
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+
+        &__container {
+            @include box__space__margin;
+
+            place-self: center;
+
+            .img--squared {
+                @include img--squared(18em);
+            }
+        }
+    }
+}
+
+
+// boxes
+@mixin box {
+    @include shadow;
+
+    background-color: $white;
+    border-radius: $border-radius-large;
+}
+
+@mixin box--medium {
+    @include shadow;
+
+    background-color: $white;
+    border-radius: $border-radius-medium;
+}
+
+@mixin box__space {
+    margin: 1em;
+    padding: 1em;
+}
+
+@mixin box__space--big {
+    margin: 1em;
+    padding: 2em;
+}
+
+@mixin box__space--small {
+    margin: 1em;
+    padding: 0.5em;
+}
+
+@mixin box__space__margin {
+    margin: 1em;
+}
+
+@mixin box__space__padding {
+    padding: 1em;
+}
+
+@mixin shadow {
+    box-shadow: 3px 3px 10px rgb(180, 180, 180);
+}
+
+@mixin box__flash__position {
+    z-index: 1;
+    display: inline-block;
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, -0%);
+
+    margin: 0;
+}
+
+@mixin challenges__item {
+    display: grid;
+    grid-template-columns: 2fr [challenge] 1fr [due] 1fr [uploads] 2fr [status] 1fr [action];
+
+    align-items: center;
+
+    padding-left: 1em;
+    padding-right: 1em;
+
+    .challenge_title {
+        font-style: bold;
+        font-weight: 700;
+    }
+
+    @media #{$tablet_little} {
+        grid-template-columns: 1fr [due] 1fr [uploads] 1.5fr [status] 1fr [action];
+        grid-row-gap: 1em;
+
+        .challenge_title {
+            grid-column: 1 / span 4;
+            text-align: center;
+        }
+    }
+
+    @media #{$mobile} {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 1em;
+
+        justify-items: center;
+
+        .challenge_title {
+            grid-column: 1 / span 2;
+        }
+
+        div {
+            text-align: center;
+        }
+        
+        div:nth-child(4),
+        .btn__ghost {
+            grid-column: 1 / span 2;
+        }
+    }
+}
+
+// img
+@mixin img--circle($size) {
+    @include shadow;
+    
+    width: $size;
+    height: $size;
+
+    object-fit: cover;
+    
+    border-radius: 50%;
+
+    padding: none;
+}
+
+@mixin img--squared($size) {
+    @include border;
+
+    width: $size;
+    height: $size;
+
+    object-fit: cover;
+}
+
+// heading
+@mixin heading__space {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    @media #{$tablet} {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;     
+    }
+}
+
+@mixin h__space--small {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+@mixin p--highlight {
+    color: $highlight;
+    font-weight: 700;
+    font-style: bold;
+}
+
+@mixin p__white--big {
+    color: $white;
+    text-transform: uppercase;
+}
+
+@mixin p--big {
+    text-transform: uppercase;
+}
+
+@mixin bold {
+    font-weight: 700;
+    font-style: bold;
+}
+
+
+// --- FORMS ---
+@mixin label_input__space {
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+
+// --- BUTTON ---
+// reset
+@mixin btn--reset-style {
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    border: none;
+    cursor: pointer;
+}
+
+// text
+@mixin btn__text {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+// transitions
+@mixin btn__main--transition {
+    transition: padding 0.3s ease-out;
+}
+
+@mixin btn__ghost--transition {
+    transition: border-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+
+// default and hover
+@mixin btn__main--default-style {
+    @include shadow;
+
+    background-color: $highlight;
+    color: $white;
+    letter-spacing: 2px;
+
+    border-radius: $border-radius-medium;
+
+    display: block;
+    padding: 0.3em 2em;
+    margin: 1em 0em;
+
+    max-width: 15em;
+    width: fit-content;
+}
+
+@mixin btn__main--hover-style {
+    padding: 0.3em 2.5em;
+}
+
+@mixin btn__main--disabled-style {
+    background-color: $grey;
+    pointer-events: none;
+}
+
+@mixin btn__main--focus-style {
+    background-color: $highlight;
+    padding: 0.3em 2.5em;
+}
+
+
+
+@mixin btn__ghost--default-style {
+    @include shadow;
+
+    background-color: $white;
+    color: $dark_grey;
+
+    @include border;
+    border-radius: $border-radius-medium;
+
+    min-width: 13em;
+
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+
+    display: block;
+    margin: 1em 0em;
+
+    max-width: 10em;
+}
+
+@mixin btn__ghost--hover-style {
+    border-color: $highlight;
+    color: $highlight;
+}
+
+@mixin btn__ghost--disabled-style {
+    border-color: $dark_grey;
+    background-color: $grey;
+    color: $white;
+    pointer-events: none;
+}
+
+@mixin btn__ghost--focus-style {
+    border-color: $highlight;
+    color: $highlight;
+}
+
+
+@mixin font-size($p, $h1, $h2, $h3) {
+    * {
+        font-family: $text;
+    }
+
+    // fonts:
+    p,
+    li,
+    a {
+        font-size: $p;
+        line-height: 1.5;
+
+        color: $dark_grey;
+    }
+
+    .p--highlight {
+        color: $highlight;
+        font-weight: 700;
+        font-style: bold;
+    }
+
+    .p--small {
+        font-size: $p*0.9;
+        color: $grey;  
+    }
+
+    .p--big {
+        @include p--big;
+    }
+
+    .p__white--big {
+        @include p__white--big;
+    }
+
+
+    h1, h2, h3 {
+        font-family: $heading;
+        color: $main;
+        letter-spacing: 3px;
+    }
+
+    h1 {
+        @include heading__space;
+
+        font-size: $h1;
+        text-transform: uppercase;
+
+        font-weight: 700;
+    }
+
+    .h1--big {
+        font-size: $h1*1.1;
+        text-transform: uppercase;
+
+        font-style: bold;
+        font-weight: 500;
+    }
+
+    .ranking__grid__digits {
+        font-family: $heading;
+        font-size: $h1*1.5;
+        color: $main;
+
+        text-transform: uppercase;
+
+        font-style: bold;
+        font-weight: 700; 
+
+        margin-right: 2rem;
+    }
+
+
+    h2 {
+        @include heading__space;
+
+        font-size: $h2;
+
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .h2--highlight {
+        color: $highlight;
+    }
+
+    h3 {
+        @include heading__space;
+
+        font-size: $h3;
+        text-transform: uppercase;
+    }
+
+    .white {
+        color: white; 
+    }
+
+
+    // components:
+    button {
+        font-size: $p;
+        text-transform: uppercase;
+    }
+
+    .btn__main {
+        font-family: $heading;
+        font-size: $h3;
+    }
+    
+    // links:
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: $main;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    
+    .a__small--underlined {
+        font-size: $p*0.9;
+        color: $grey;
+
+        text-decoration: underline;
+        text-transform: unset;
+    }
+
+
+    // table:
+    table {
+        // font-family: $text;
+        font-size: $p;
+    }
+
+    // forms:
+    label, 
+    input,
+    select, 
+    textarea{
+        font-size: $p;
+    }
+
+    input[type=submit] {
+        font-size: $h3;
+    }
+
+
+    label {
+        @include p__white--big;
+        line-height: 1.5;
+    }
+}
+
+@mixin font-family($text-font, $heading-font) {
+    * {
+        font-family: $text-font;
+    }
+    
+    h1, 
+    h2,
+    h3 {
+        font-family: $heading-font;
+    }
+        
+    .ranking__grid__digits,
+    .btn__main {
+        font-family: $heading-font;
+    }    
+}

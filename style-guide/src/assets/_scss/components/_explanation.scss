@@ -1,0 +1,24 @@
+.explanation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__box {
+        @include box;
+        @include box__space;
+
+        width: 20em;
+
+        img {
+            display: block;
+
+            height: 7em;
+
+            margin: auto;
+        }
+
+        .btn__ghost {
+            @include horizontally-aligned;
+        }
+    }
+}

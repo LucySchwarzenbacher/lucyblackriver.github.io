@@ -1,0 +1,67 @@
+.hall_of_fame {
+    &__container {
+        text-align: center;
+
+        &__box {
+            @include box;
+            @include box__space;
+            @include horizontally-aligned;
+
+            width: 22em;
+    
+            text-align: center;
+    
+            &__upload {
+                @include img--circle(18em);
+    
+                margin-bottom: 1em;
+                object-fit: scale-down;
+            }
+    
+            &__likes {
+                padding-top: 1.5em;
+                padding-bottom: 1.5em;
+            }
+    
+            .icon__heart--filled {
+                @include icon__text--max;
+                @include icon__text__space;
+            }
+
+            .btn__ghost {
+                @include horizontally-aligned;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .hall_of_fame { 
+        &__container {
+            &__box {
+                @include horizontally-aligned;
+            }
+        }
+    }    
+}
+
+
+@media #{$mobile} {
+    .hall_of_fame { 
+        &__container {
+            &__box {
+                width: 16.5em;
+
+                &__upload {
+                    @include img--circle(15em);
+                    object-fit: scale-down;
+                }
+            }
+        }  
+    }
+}
+
+
+
+
+

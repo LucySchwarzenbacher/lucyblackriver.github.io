@@ -1,0 +1,43 @@
+.countdown__grid {
+    background-color: $main;
+
+    max-width: 40em;
+
+    margin: auto;
+    margin-bottom: 6em;
+
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat([labels] 1fr [countdown] 1.5fr);
+
+    align-items: center;
+    place-items: center;
+
+    p {
+        color: white;
+        text-transform: uppercase;
+    }
+
+    h1:nth-child(even) {
+        background-color: $white;
+        color: $main;
+
+        border-radius: $border-radius-medium;;
+        padding: 0.5em;
+    }
+
+    h1:nth-child(odd) {
+        color: $white;
+    }
+}
+
+@media #{$mobile} {
+    .countdown__grid {
+        h1:nth-child(even) {
+            padding: 0.1em;
+        }
+    }
+}

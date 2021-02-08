@@ -1,0 +1,48 @@
+.btn {
+  @include btn--reset-style;
+  @include btn__text;
+}
+
+.btn__main {
+  @include btn__main--default-style;
+  @include btn__main--transition;
+
+  &:hover,
+  &[state="hover"] {
+    @include btn__main--hover-style;
+  }
+
+  &:disabled,
+  &[disabled],
+  &[state="disabled"],
+  &--disabled {
+    @include btn__main--disabled-style;
+  }
+
+  &[state="focus"],
+  &:focus {
+    @include btn__main--focus-style;
+  }
+}
+
+.btn__ghost {
+  @include btn__ghost--default-style;
+  @include btn__ghost--transition;
+
+  &:hover,
+  &[state="hover"] {
+      @include btn__ghost--hover-style;
+  }
+
+  &:disabled,
+  &[disabled],
+  &[state="disabled"],
+  &--disabled {
+      @include btn__ghost--disabled-style;
+  }
+  
+  &[state="focus"],
+  &:focus {
+      @include btn__ghost--focus-style;
+  }
+}

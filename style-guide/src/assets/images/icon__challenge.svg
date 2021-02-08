@@ -1,0 +1,22 @@
+<svg id="icon__challenge" xmlns="http://www.w3.org/2000/svg" width="151.604" height="146.023" viewBox="0 0 151.604 146.023">
+  <g id="Gruppe_9" data-name="Gruppe 9">
+    <g id="Gruppe_7" data-name="Gruppe 7" transform="translate(110.504) rotate(45)">
+      <path id="Pfad_3" data-name="Pfad 3" d="M16.275,4.339a2.791,2.791,0,0,0-4.644-3.1L.469,17.987a2.791,2.791,0,0,0,4.644,3.1Zm6.05,58.2a2.791,2.791,0,1,0,5.581,0V19.535a2.791,2.791,0,1,0-5.581,0Z" transform="translate(11.162 0)" fill="#4dccad" fill-rule="evenodd"/>
+      <path id="Pfad_4" data-name="Pfad 4" d="M5.581,85.326a2.791,2.791,0,1,0-5.581,0v17.927a2.791,2.791,0,0,0,5.581,0Zm0-65.792a2.791,2.791,0,0,0-5.581,0V61.772a2.791,2.791,0,0,0,5.581,0Zm17.212,1.548a2.791,2.791,0,1,0,4.644-3.1L16.275,1.243a2.791,2.791,0,1,0-4.644,3.1Zm-.469,82.171a2.791,2.791,0,1,0,5.581,0v-17.5a2.791,2.791,0,0,0-5.581,0Z" transform="translate(11.162 0)" fill="#4dccad" fill-rule="evenodd"/>
+      <path id="Pfad_5" data-name="Pfad 5" d="M8.355,5.581H41.876A2.769,2.769,0,0,1,44.65,8.372a2.806,2.806,0,0,1-2.774,2.791H8.355A2.769,2.769,0,0,1,5.581,8.372,2.806,2.806,0,0,1,8.355,5.581Zm0,11.162H41.876A8.372,8.372,0,0,0,41.876,0H8.355a8.372,8.372,0,0,0,0,16.744Z" transform="translate(0 100.463)" fill="#4dccad" fill-rule="evenodd"/>
+      <path id="Pfad_6" data-name="Pfad 6" d="M0,16.744H5.581V0H0Z" transform="translate(16.744 114.416)" fill="#4dccad" fill-rule="evenodd"/>
+      <path id="Pfad_7" data-name="Pfad 7" d="M5.581,0H0V16.744H5.581Z" transform="translate(27.906 114.416)" fill="#4dccad" fill-rule="evenodd"/>
+      <path id="Pfad_8" data-name="Pfad 8" d="M27.906,13.953A13.953,13.953,0,1,0,13.953,27.906,13.953,13.953,0,0,0,27.906,13.953Zm-22.325,0a8.372,8.372,0,1,1,8.372,8.372A8.372,8.372,0,0,1,5.581,13.953Z" transform="translate(11.162 128.369)" fill="#4dccad" fill-rule="evenodd"/>
+      <path id="Pfad_9" data-name="Pfad 9" d="M0,35.065a2.791,2.791,0,0,0,5.581,0V2.791A2.791,2.791,0,1,0,0,2.791ZM0,75.347a2.791,2.791,0,0,0,5.581,0V57.658a2.791,2.791,0,1,0-5.581,0Z" transform="translate(22.325 27.906)" fill="#4dccad" fill-rule="evenodd"/>
+    </g>
+    <g id="Gruppe_8" data-name="Gruppe 8" transform="translate(151.604 110.504) rotate(135)">
+      <path id="Pfad_10" data-name="Pfad 10" d="M16.275,101.705a2.791,2.791,0,1,1-4.644,3.1L.469,88.058a2.791,2.791,0,0,1,4.644-3.1Zm6.05-98.915a2.791,2.791,0,1,1,5.581,0V86.51a2.791,2.791,0,0,1-5.581,0Z" transform="translate(11.162 50.231)" fill="#4dccad" fill-rule="evenodd"/>
+      <path id="Pfad_11" data-name="Pfad 11" d="M5.581,86.51A2.791,2.791,0,0,1,0,86.51V2.791a2.791,2.791,0,0,1,5.581,0Zm17.212-1.548a2.791,2.791,0,0,1,4.644,3.1L16.275,104.8a2.791,2.791,0,1,1-4.644-3.1Z" transform="translate(11.163 50.231)" fill="#4dccad" fill-rule="evenodd"/>
+      <path id="Pfad_12" data-name="Pfad 12" d="M8.355,11.163H41.876A2.769,2.769,0,0,0,44.65,8.372a2.806,2.806,0,0,0-2.774-2.791H8.355A2.769,2.769,0,0,0,5.581,8.372,2.806,2.806,0,0,0,8.355,11.163ZM8.355,0H41.876a8.372,8.372,0,0,1,0,16.744H8.355A8.372,8.372,0,0,1,8.355,0Z" transform="translate(0 39.069)" fill="#4dccad" fill-rule="evenodd"/>
+      <path id="Pfad_13" data-name="Pfad 13" d="M0,0H5.581V16.744H0Z" transform="translate(16.744 25.116)" fill="#4dccad" fill-rule="evenodd"/>
+      <path id="Pfad_14" data-name="Pfad 14" d="M5.581,16.744H0V0H5.581Z" transform="translate(27.906 25.116)" fill="#4dccad" fill-rule="evenodd"/>
+      <path id="Pfad_15" data-name="Pfad 15" d="M27.906,13.953A13.953,13.953,0,1,1,13.953,0,13.953,13.953,0,0,1,27.906,13.953Zm-22.325,0a8.372,8.372,0,1,0,8.372-8.372A8.372,8.372,0,0,0,5.581,13.953Z" transform="translate(11.163 0)" fill="#4dccad" fill-rule="evenodd"/>
+      <path id="Pfad_16" data-name="Pfad 16" d="M0,2.791a2.791,2.791,0,0,1,5.581,0V75.347a2.791,2.791,0,1,1-5.581,0Z" transform="translate(22.325 50.231)" fill="#4dccad" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

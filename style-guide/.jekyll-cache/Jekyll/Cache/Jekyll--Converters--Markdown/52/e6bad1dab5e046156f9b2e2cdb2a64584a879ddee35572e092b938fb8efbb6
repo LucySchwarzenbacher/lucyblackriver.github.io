@@ -1,0 +1,124 @@
+I"�,<h1 id="pre-processors">Pre Processors</h1>
+<p>ColourInstinct uses the SASS-CSS Preprocessor to convert SCSS to CSS. We considered using SCSS as very beneficials in terms of efficiency and expressiveness. Nesting had the advantage of being less time-consuming as well as ensuring a cleaner structured code. The highlight though was the use of variables which could be universally used throughout the files. In fact, it helps tremendously in normalizing the code and reducing redunancy. 
+More information: https://sass-lang.com/</p>
+
+<h1 id="file-structure">File Structure</h1>
+<p>In order to maintain a clearly structured overview of the files and their content, we used the 7-1 pattern. Besides the official recommendation by the Sass Guidelines, we also came to the conclusion that the division in different topics was very helpful to search and find specific code partials.</p>
+
+<p>Generally, the structure is as follows:</p>
+
+<pre><code class="language-/">sass/
+|  
+|– abstracts/  
+|   |– _variables.scss    # Sass Variablen  
+|   |– _functions.scss    # Sass Funktionen  
+|   |– _mixins.scss       # Sass Mixins  
+|   |– _placeholders.scss # Sass Platzhalter  
+|
+|– base/
+|   |– _reset.scss        # Reset/normalize  
+|   |– _typography.scss   # Regeln für Typographie  
+|   …                     # Etc.  
+|
+|– components/
+|   |– _buttons.scss      # Buttons  
+|   |– _carousel.scss     # Carousel  
+|   |– _cover.scss        # Cover  
+|   |– _dropdown.scss     # Dropdown  
+|   …                     # Etc.  
+|
+|– layout/
+|   |– _navigation.scss   # Navigation  
+|   |– _grid.scss         # Grid system  
+|   |– _header.scss       # Header  
+|   |– _footer.scss       # Footer  
+|   |– _sidebar.scss      # Sidebar  
+|   |– _forms.scss        # Forms  
+|   …                     # Etc.  
+|
+|– pages/
+|   |– _home.scss         # Home spezifische Styles  
+|   |– _contact.scss      # Contact spezifische styles  
+|   …                     # Etc.
+|
+|– themes/
+|   |– _theme.scss        # Default-Theme  
+|   |– _admin.scss        # Admin-Theme  
+|   …                     # Etc.  
+|
+|– vendors/
+|   |– _bootstrap.scss    # Bootstrap
+|   |– _jquery-ui.scss    # jQuery UI
+|   …                     # Etc.
+|
+|
+`– main.scss              # Haupt Sass-Datei
+</code></pre>
+
+<p>More information: https://sass-guidelin.es/de/#das-7-1-muster</p>
+
+<h1 id="units">Units</h1>
+<p>Overall, the most-used units in the project are <code class="language-plaintext highlighter-rouge">rem</code> for fonts and <code class="language-plaintext highlighter-rouge">em</code> for scalable images and other components. A main advantage by using these units is the increased flexibility concerning the responsiveness as it is usually calculated based on the font-size. <br />
+Rarely, for instance for the hero or countdown, the units <code class="language-plaintext highlighter-rouge">vh</code> and <code class="language-plaintext highlighter-rouge">vw</code> were used in order to make sure that a certain percentage of the screen is covered. Though it was crucial to define either <code class="language-plaintext highlighter-rouge">max-width</code> or <code class="language-plaintext highlighter-rouge">min-width</code> to ensure a responsive layout on all resolutions.</p>
+
+<h1 id="css-normalize">CSS Normalize</h1>
+<p>In order to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, we made use of the CSS reset file created by Eric A. Meyer</p>
+
+<p>The file is as follows:</p>
+
+<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* http://meyerweb.com/eric/tools/css/reset/ 
+</span>   <span class="cm">v2.0 | 20110126
+</span>   <span class="cm">License: none (public domain)
+</span><span class="o">*/</span>
+
+<span class="nt">html</span><span class="o">,</span> <span class="nt">body</span><span class="o">,</span> <span class="nt">div</span><span class="o">,</span> <span class="nt">span</span><span class="o">,</span> <span class="nt">applet</span><span class="o">,</span> <span class="nt">object</span><span class="o">,</span> <span class="nt">iframe</span><span class="o">,</span>
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span><span class="o">,</span> <span class="nt">p</span><span class="o">,</span> <span class="nt">blockquote</span><span class="o">,</span> <span class="nt">pre</span><span class="o">,</span>
+<span class="nt">a</span><span class="o">,</span> <span class="nt">abbr</span><span class="o">,</span> <span class="nt">acronym</span><span class="o">,</span> <span class="nt">address</span><span class="o">,</span> <span class="nt">big</span><span class="o">,</span> <span class="nt">cite</span><span class="o">,</span> <span class="nt">code</span><span class="o">,</span>
+<span class="nt">del</span><span class="o">,</span> <span class="nt">dfn</span><span class="o">,</span> <span class="nt">em</span><span class="o">,</span> <span class="nt">img</span><span class="o">,</span> <span class="nt">ins</span><span class="o">,</span> <span class="nt">kbd</span><span class="o">,</span> <span class="nt">q</span><span class="o">,</span> <span class="nt">s</span><span class="o">,</span> <span class="nt">samp</span><span class="o">,</span>
+<span class="nt">small</span><span class="o">,</span> <span class="nt">strike</span><span class="o">,</span> <span class="nt">strong</span><span class="o">,</span> <span class="nt">sub</span><span class="o">,</span> <span class="nt">sup</span><span class="o">,</span> <span class="nt">tt</span><span class="o">,</span> <span class="nt">var</span><span class="o">,</span>
+<span class="nt">b</span><span class="o">,</span> <span class="nt">u</span><span class="o">,</span> <span class="nt">i</span><span class="o">,</span> <span class="nt">center</span><span class="o">,</span>
+<span class="nt">dl</span><span class="o">,</span> <span class="nt">dt</span><span class="o">,</span> <span class="nt">dd</span><span class="o">,</span> <span class="nt">ol</span><span class="o">,</span> <span class="nt">ul</span><span class="o">,</span> <span class="nt">li</span><span class="o">,</span>
+<span class="nt">fieldset</span><span class="o">,</span> <span class="nt">form</span><span class="o">,</span> <span class="nt">label</span><span class="o">,</span> <span class="nt">legend</span><span class="o">,</span>
+<span class="nt">table</span><span class="o">,</span> <span class="nt">caption</span><span class="o">,</span> <span class="nt">tbody</span><span class="o">,</span> <span class="nt">tfoot</span><span class="o">,</span> <span class="nt">thead</span><span class="o">,</span> <span class="nt">tr</span><span class="o">,</span> <span class="nt">th</span><span class="o">,</span> <span class="nt">td</span><span class="o">,</span>
+<span class="nt">article</span><span class="o">,</span> <span class="nt">aside</span><span class="o">,</span> <span class="nt">canvas</span><span class="o">,</span> <span class="nt">details</span><span class="o">,</span> <span class="nt">embed</span><span class="o">,</span> 
+<span class="nt">figure</span><span class="o">,</span> <span class="nt">figcaption</span><span class="o">,</span> <span class="nt">footer</span><span class="o">,</span> <span class="nt">header</span><span class="o">,</span> <span class="nt">hgroup</span><span class="o">,</span> 
+<span class="nt">menu</span><span class="o">,</span> <span class="nt">nav</span><span class="o">,</span> <span class="nt">output</span><span class="o">,</span> <span class="nt">ruby</span><span class="o">,</span> <span class="nt">section</span><span class="o">,</span> <span class="nt">summary</span><span class="o">,</span>
+<span class="nt">time</span><span class="o">,</span> <span class="nt">mark</span><span class="o">,</span> <span class="nt">audio</span><span class="o">,</span> <span class="nt">video</span> <span class="err">{</span>
+	<span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="err">;</span>
+	<span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="err">;</span>
+	<span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="err">;</span>
+	<span class="nl">font-size</span><span class="p">:</span> <span class="m">100%</span><span class="err">;</span>
+	<span class="nl">font</span><span class="p">:</span> <span class="nb">inherit</span><span class="err">;</span>
+	<span class="nl">vertical-align</span><span class="p">:</span> <span class="nb">baseline</span><span class="err">;</span>
+<span class="err">}</span>
+<span class="cm">/* HTML5 display-role reset for older browsers */
+</span><span class="nt">article</span><span class="o">,</span> <span class="nt">aside</span><span class="o">,</span> <span class="nt">details</span><span class="o">,</span> <span class="nt">figcaption</span><span class="o">,</span> <span class="nt">figure</span><span class="o">,</span> 
+<span class="nt">footer</span><span class="o">,</span> <span class="nt">header</span><span class="o">,</span> <span class="nt">hgroup</span><span class="o">,</span> <span class="nt">menu</span><span class="o">,</span> <span class="nt">nav</span><span class="o">,</span> <span class="nt">section</span> <span class="err">{</span>
+	<span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="err">;</span>
+<span class="err">}</span>
+<span class="nt">body</span> <span class="err">{</span>
+	<span class="nl">line-height</span><span class="p">:</span> <span class="m">1</span><span class="err">;</span>
+<span class="err">}</span>
+<span class="nt">ol</span><span class="o">,</span> <span class="nt">ul</span> <span class="err">{</span>
+	<span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="err">;</span>
+<span class="err">}</span>
+<span class="nt">blockquote</span><span class="o">,</span> <span class="nt">q</span> <span class="err">{</span>
+	<span class="nl">quotes</span><span class="p">:</span> <span class="nb">none</span><span class="err">;</span>
+<span class="err">}</span>
+<span class="nt">blockquote</span><span class="nd">:before</span><span class="o">,</span> <span class="nt">blockquote</span><span class="nd">:after</span><span class="o">,</span>
+<span class="nt">q</span><span class="nd">:before</span><span class="o">,</span> <span class="nt">q</span><span class="nd">:after</span> <span class="err">{</span>
+	<span class="nl">content</span><span class="p">:</span> <span class="s1">''</span><span class="err">;</span>
+	<span class="nl">content</span><span class="p">:</span> <span class="nb">none</span><span class="err">;</span>
+<span class="err">}</span>
+<span class="nt">table</span> <span class="err">{</span>
+	<span class="nl">border-collapse</span><span class="p">:</span> <span class="nb">collapse</span><span class="err">;</span>
+	<span class="nl">border-spacing</span><span class="p">:</span> <span class="m">0</span><span class="err">;</span>
+<span class="err">}</span>
+</code></pre></div></div>
+
+<p>More information: https://meyerweb.com/ui/about.html</p>
+
+<h1 id="spacings">Spacings</h1>
+<p>In order to maintain equal spacing and other settings.</p>
+
+:ET

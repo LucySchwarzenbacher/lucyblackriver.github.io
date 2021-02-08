@@ -1,0 +1,40 @@
+.icon__status,
+.icon__heart,
+.icon__text,
+.icon__reset {
+    @include icon__text--max;
+    @include icon__text__space;
+}
+
+.icon__stats {
+    max-width: 4em;
+}
+
+.icon__sidebar {
+    width: 4em;
+    padding-bottom: 0.5rem;
+
+    @media #{$mobile} {
+        width: 3em;
+    }
+}
+
+.icon__upload {
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+    @media #{$mobile} {
+        width: 8em;
+        margin-top: 2em;
+        margin-bottom: 2em;    
+    }
+}
+
+.active {
+    i {
+        color: $highlight;
+    }
+}
+
+
+

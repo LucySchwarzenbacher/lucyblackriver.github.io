@@ -1,0 +1,29 @@
+.active_challenges {
+    &__item {
+        @include box--medium;
+        @include box__space--small;
+        @include challenges__item;
+
+        p {
+            margin: 0;
+        }
+
+        .btn__ghost {
+            min-width: 8em;
+
+            height: fit-content;
+
+            margin: 0;
+        }
+    }
+}
+
+@media #{$tablet} {
+    .active_challenges {
+        &__item {
+            .btn__ghost {
+                width: 6em;
+            }
+        }
+    }
+} 

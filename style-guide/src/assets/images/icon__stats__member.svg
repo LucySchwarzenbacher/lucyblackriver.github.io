@@ -1,0 +1,8 @@
+<svg id="icon-member" xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86">
+  <g id="circle__small">
+    <circle id="circle-small" cx="43" cy="43" r="43" fill="#4dccad"/>
+  </g>
+  <g id="icon__member" transform="translate(24.5 21.5)">
+    <path id="icon-member-2" data-name="icon-member" d="M38.171,5.709h-2.1V1.5H31.858V5.709H15.022V1.5H10.813V5.709h-2.1A4.208,4.208,0,0,0,4.5,9.918V39.38a4.208,4.208,0,0,0,4.209,4.209H38.171A4.221,4.221,0,0,0,42.38,39.38V9.918A4.221,4.221,0,0,0,38.171,5.709ZM23.44,12.022a6.313,6.313,0,1,1-6.313,6.313A6.3,6.3,0,0,1,23.44,12.022ZM36.066,37.275H10.813v-2.1c0-4.209,8.418-6.524,12.627-6.524s12.627,2.315,12.627,6.524Z" transform="translate(-4.5 -1.5)" fill="none" stroke="#fff" stroke-width="2.5"/>
+  </g>
+</svg>
