@@ -1,0 +1,96 @@
+I"1<h1 id="bem">BEM</h1>
+<p>Generally speaking, classes and identifiers in the project are in lowercase and english. Furthermore, the classes are declared according to the the BEM pattern. In other words, a class name follows the block__element-modifier syntax. This is not only helpful to establish a clear structure and hierarchy, but also assists in writing clean and tidy (S)CSS code.</p>
+
+<p>BEM is a component-based approach that divides the interface into independent blocks. The name of a BEM entity is unique and equal throughout the used technologies (CSS, JavaScript and HTML). The goal of the given names is to inform the developer about their content.</p>
+
+<p>Rules that are considered in the project:</p>
+<ul>
+  <li>names in lowercase</li>
+  <li>if a block is described by more than one word, use <code class="language-plaintext highlighter-rouge">-</code></li>
+  <li>if a block is modified, use one underscore (<code class="language-plaintext highlighter-rouge">_</code>) between words</li>
+  <li>the element name is separated from the block name by double underscore (<code class="language-plaintext highlighter-rouge">__</code>)</li>
+  <li>the modifier name is separated from the block name or element name by double dash (<code class="language-plaintext highlighter-rouge">--</code>)</li>
+</ul>
+
+<p><strong><em>More information about BEM:** http://getbem.com/introduction/</em><br />
+**More information about Code Conventions:</strong> https://en.bem.info/methodology/naming-convention/</p>
+
+<p>Following inspired by: http://getbem.com/naming/</p>
+<h2 id="block">Block</h2>
+<h3 id="naming">Naming</h3>
+<p>Block names are in lowercase. If block is described by more than one word, use <code class="language-plaintext highlighter-rouge">-</code>. If a block is modified, use one underscore (<code class="language-plaintext highlighter-rouge">_</code>) between words. A prefix needs to be added to form a CSS class.</p>
+
+<p><strong>Example:</strong></p>
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">.block</code></p>
+</blockquote>
+
+<h3 id="html">HTML</h3>
+<p>If DOM node accepts class name, it can classify as a DOM node.</p>
+<pre><code class="language-/">&lt;div class= "challenge"&gt;
+    . . .
+&lt;/div&gt;
+</code></pre>
+
+<h3 id="css">CSS</h3>
+<p>The DOM node is used with class name selectors only.</p>
+<pre><code class="language-/">.challenge { 
+    color: $white 
+}
+</code></pre>
+
+<h2 id="element">Element</h2>
+<p>The elements are tied to its block and have no standalone meaning.</p>
+
+<h3 id="naming-1">Naming</h3>
+<p>The element name is separated from the block name by double underscore (<code class="language-plaintext highlighter-rouge">__</code>)</p>
+
+<p><strong>Example:</strong></p>
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">.block__elem</code></p>
+</blockquote>
+
+<h3 id="html-1">HTML</h3>
+<p>If an element is within a DOM node, it can be declared as an element.</p>
+<pre><code class="language-/">&lt;div class="challenge"&gt;
+    &lt;div class="challenge__item&gt;
+        . . .
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3 id="css-1">CSS</h3>
+<p>The element is used with class name selectors only with no dependency to other blocks.</p>
+<pre><code class="language-/">.challenge__item { 
+    color: $white 
+}
+</code></pre>
+
+<h2 id="modifier">Modifier</h2>
+<p>They are used to describe the appearance, behaviour or state of blocks.</p>
+
+<h3 id="naming-2">Naming</h3>
+<p>They consist of the elements’s or block’s ame with two dashes that describe the given appearance, behaviour or state. The modifier name is separated from the block name or element name by double dash (<code class="language-plaintext highlighter-rouge">--</code>)</p>
+
+<p><strong>Example:</strong></p>
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">.block--mod</code> // <code class="language-plaintext highlighter-rouge">.block__elem--mod</code></p>
+</blockquote>
+
+<h3 id="html-2">HTML</h3>
+<p>They are added as an extra class to the DOM node, while still using the original class.</p>
+<pre><code class="language-/">&lt;div class="challenge"&gt;
+    &lt;div class="challenge__item--active&gt;
+        . . .
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3 id="css-2">CSS</h3>
+<p>The modifier class name is used as a selector.</p>
+<pre><code class="language-/">.challenge__item--active { 
+    color: $white 
+}
+</code></pre>
+
+:ET

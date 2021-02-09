@@ -5,7 +5,8 @@ info: Code Conventions used in this system.
 
 # Pre Processors
 ColourInstinct uses the SASS-CSS Preprocessor to convert SCSS to CSS. We considered using SCSS as very beneficials in terms of efficiency and expressiveness. Nesting had the advantage of being less time-consuming as well as ensuring a cleaner structured code. The highlight though was the use of variables which could be universally used throughout the files. In fact, it helps tremendously in normalizing the code and reducing redunancy. 
-More information: https://sass-lang.com/
+
+**More information about SASS:** https://sass-lang.com/
 
 # File Structure
 In order to maintain a clearly structured overview of the files and their content, we used the 7-1 pattern. Besides the official recommendation by the Sass Guidelines, we also came to the conclusion that the division in different topics was very helpful to search and find specific code partials.
@@ -62,7 +63,7 @@ sass/
 `– main.scss              # Haupt Sass-Datei
 ```
 
-More information: https://sass-guidelin.es/de/#das-7-1-muster
+**More information about 7-1 Pattern:** https://sass-guidelin.es/de/#das-7-1-muster
 
 
 # Units
@@ -129,7 +130,7 @@ table {
 }
 ```
 
-More information: https://meyerweb.com/ui/about.html
+**More information about CSS Reset:** https://meyerweb.com/ui/about.html
 
 # Spacings
 In order to maintain equal spacing and other settings, single components are heavily based on universal mixins. For instance, boxes are design in consideration for different spacings.
@@ -184,9 +185,9 @@ Boxes with different margins and paddings are defined as mixins. Consequently, t
 In order to maintain a responsive design, we declared the following breakpoints.
 
 ```/
-$desktop_little: "screen and (max-width: 1330px)";
+$desktop-little: "screen and (max-width: 1330px)";
 $tablet: "screen and (max-width: 1050px)";
 $mobile: "screen and (max-width: 550px)";
-$mobile_little: "screen and (max-width: 370px)";
+$mobile-little: "screen and (max-width: 370px)";
 ```
 

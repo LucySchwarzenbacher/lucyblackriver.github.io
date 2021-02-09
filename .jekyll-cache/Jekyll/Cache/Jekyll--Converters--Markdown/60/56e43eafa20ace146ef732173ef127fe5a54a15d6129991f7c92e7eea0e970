@@ -1,0 +1,7 @@
+I"¿<p>Generally speaking, classes and identifiers in the project are in lowercase and english. Furthermore, the classes are declared according to the the BEM pattern. In other words, a class name follows the block__element-modifier syntax. This is not only helpful to establish a clear structure and hierarchy, but also assists in writing clean and tidy (S)CSS code.</p>
+
+<p>BEM is a component-based approach that divides the interface into independent blocks. The name of a BEM entity is unique and equal throughout the used technologies (CSS, JavaScript and HTML). The goal of the given names is to inform the developer about their content.</p>
+
+<p>More information: http://getbem.com/introduction/</p>
+
+:ET

@@ -1,0 +1,171 @@
+I"/<p>Our fonts are <em>Roboto</em> and <em>Oswald</em>. Roboto is the default font for our application and it is used for all paragraph-tags and link-tags and for the ghost buttons. Oswald is mainly used for the heading and the main buttons.</p>
+
+<h1 id="roboto">Roboto</h1>
+
+<section class="sg_pattern" id="roboto-default">
+  <div class="title">
+    <a class="permalink" href="#roboto-default"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Roboto Default</div> 
+    <div class="sg_label ready">ready</div>
+  </div>
+  
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/foundations/typography/roboto.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="abstracts/fonts.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;style&gt;</span>
+  <span class="o">*</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Roboto'</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#707070</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">word-wrap</span><span class="p">:</span> <span class="n">break-word</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0.2em</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+
+## AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+## 1234567890',.<span class="nt">&lt;&gt;</span>/?;':"[]{}-=_+!@#$%^<span class="err">&amp;</span>*()
+
+Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</code></pre></figure>
+
+  </div>
+</section>
+
+<p>This font is used for almost all the text in  our application and it has the colour <code class="language-plaintext highlighter-rouge">$dark-gray</code>.</p>
+
+<section class="sg_pattern" id="roboto-white">
+  <div class="title">
+    <a class="permalink" href="#roboto-white"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Roboto White</div> 
+    <div class="sg_label ready">ready</div>
+  </div>
+  
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/foundations/typography/roboto-white.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="abstracts/fonts.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;style&gt;</span>
+  <span class="o">*</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Roboto'</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">white</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="m">#2F3E51</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">word-wrap</span><span class="p">:</span> <span class="n">break-word</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0.2em</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+
+## AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+## 1234567890',.<span class="nt">&lt;&gt;</span>/?;':"[]{}-=_+!@#$%^<span class="err">&amp;</span>*()
+
+Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</code></pre></figure>
+
+  </div>
+</section>
+
+<p>This font-style is mainly used for the navigation-bar and the footer. It is also applied as the font for the hero section on the front page of the application.</p>
+
+<section class="sg_pattern" id="roboto-highlight">
+  <div class="title">
+    <a class="permalink" href="#roboto-highlight"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Roboto Highlight</div> 
+    <div class="sg_label draft">draft</div>
+  </div>
+  
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/foundations/typography/roboto-highlight.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="abstracts/fonts.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;style&gt;</span>
+  <span class="o">*</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Roboto'</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#4DCCAD</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="m">700</span><span class="p">;</span>
+    <span class="nl">font-style</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0.2em</span><span class="p">;</span>
+    <span class="nl">word-wrap</span><span class="p">:</span> <span class="n">break-word</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+
+## AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+## 1234567890',.<span class="nt">&lt;&gt;</span>/?;':"[]{}-=_+!@#$%^<span class="err">&amp;</span>*()
+
+Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</code></pre></figure>
+
+  </div>
+</section>
+
+<p>For crucial information we applied our <code class="language-plaintext highlighter-rouge">$highlight</code> colour, to make it apparent, that this is important.</p>
+
+<h1 id="oswald">Oswald</h1>
+
+<section class="sg_pattern" id="oswald">
+  <div class="title">
+    <a class="permalink" href="#oswald"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Oswald</div> 
+    <div class="sg_label ready">ready</div>
+  </div>
+  
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/foundations/typography/oswald.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="abstracts/fonts.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;style&gt;</span>
+  <span class="o">*</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Oswald'</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">word-wrap</span><span class="p">:</span> <span class="n">break-word</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#2F3E51</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0.2em</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+
+## AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+## 1234567890',.<span class="nt">&lt;&gt;</span>/?;':"[]{}-=_+!@#$%^<span class="err">&amp;</span>*()
+
+Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</code></pre></figure>
+
+  </div>
+</section>
+
+<p>This font has the colour <code class="language-plaintext highlighter-rouge">$main</code> and is used for the headings of our application.</p>
+
+<section class="sg_pattern" id="oswald">
+  <div class="title">
+    <a class="permalink" href="#oswald"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Oswald</div> 
+    <div class="sg_label ready">ready</div>
+  </div>
+  
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/foundations/typography/oswald-white.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="abstracts/fonts.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;style&gt;</span>
+  <span class="o">*</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Oswald'</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">word-wrap</span><span class="p">:</span> <span class="n">break-word</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#FFFFFF</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="m">#2F3E51</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0.2em</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+
+## AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+## 1234567890',.<span class="nt">&lt;&gt;</span>/?;':"[]{}-=_+!@#$%^<span class="err">&amp;</span>*()
+
+Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</code></pre></figure>
+
+  </div>
+</section>
+
+<p>We use this font for our main buttons and the heading in the hero section on the front page.</p>
+
+<hr />
+
+<h2 id="copryright">Copryright</h2>
+
+<p>Roboto and Oswald are free software. For more details, please visit Google Fonts official website at <a href="https://fonts.google.com/">https://fonts.google.com/</a></p>
+:ET

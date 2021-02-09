@@ -1,0 +1,41 @@
+I"�<h1 id="introduction">Introduction</h1>
+
+<h2 id="groupmembers">Groupmembers</h2>
+<ul>
+  <li>Lucia Schwarzenbacher</li>
+  <li>Dominik Lugstein</li>
+</ul>
+
+<h2 id="description">Description</h2>
+<p>The principle is rather simple: challenges and the associated timeframe is posed that the users artistically have to implement. The topic is randomly chosen - to keep it short: be open for surprises.</p>
+
+<p>In our rating system, all of the artworks and corresponding challenges are listed and waiting for you to be discovered! You can show others some love by leaving a like for their masterpieces.</p>
+
+<p>Finally, the most liked posts are displayed in our virtual ranking and given the appreciation they deserve. We are eager to invite you to stumble over new-coming artists or even find talent and passion in yourself.</p>
+
+<h2 id="targetgroup">Targetgroup</h2>
+<p>Colour Instinct is designed for creative masterminds and serves as a network for artists from all around the world. Even though there are numerous enormously talented people, only a few get the chance to share their art with others. Therefore, the main goal is that unnoticed artists receive the recognition they deserve.</p>
+
+<h1 id="license">License</h1>
+
+<p>This tool is free for everyone to use, and modify, but don’t try and sell it.
+Available under <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache license version 2.0</a>.</p>
+
+<p>It was built using <a href="https://jekyll.rb">Jekyll</a>, it’s <a href="/docs/about/02-design-principle.html">design principle</a> is based on the <a href="https://designsystem.digital.gov/design-principles/">US Design Standards</a>, and the css architecture is based on the <a href="https://matthewelsom.com/blog/simple-scss-playbook.html">Simple SCSS Playbook</a>.</p>
+
+<p><a href="https://github.com/matthewelsom/jekyll-style-guide/blob/master/LICENSE">View License File</a></p>
+
+<hr />
+
+<p>A few parts of this project are not in the public domain:</p>
+
+<ul>
+  <li><a href="https://material.io/tools/icons/">Material Icons</a> font files included in the <code class="language-plaintext highlighter-rouge">styleguide/fonts</code> directory were extracted from <a href="https://github.com/google/material-design-icons">Github</a>.</li>
+  <li><a href="https://hanken.co/product/hk-grotesk/">HK Grotesk</a> font files included in the <code class="language-plaintext highlighter-rouge">styleguide/fonts</code> directory were extracted from <a href="https://hanken.co/product/hk-grotesk/">Hanken</a>, copyright Alfredo Marco Pradil and Stefan Peev.</li>
+  <li>jQuery <code class="language-plaintext highlighter-rouge">[jquery-2.1.4.min.js]</code> was extracted from <a href="https://jquery.com/">jQuery</a>, copyright The jQuery Foundation.</li>
+  <li>Roboto font files in <code class="language-plaintext highlighter-rouge">fonts/roboto</code> were extracted from <a href="https://fonts.google.com/">Google Fonts</a>, copyright Christian Robertson.</li>
+  <li>Normalize <code class="language-plaintext highlighter-rouge">[_normalize.scss]</code> was extrcted from <a href="https://github.com/necolas/normalize.css">Normalize.css</a>, copyright Nicolas Gallagher and Jonathan Neal.</li>
+</ul>
+
+<p><strong>Please check with the respective rights holders for license details.</strong></p>
+:ET

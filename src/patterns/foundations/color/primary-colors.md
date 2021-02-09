@@ -6,7 +6,7 @@ control: exclude
 colors: 
   - name: $white
     hex: '#FFFFFF'
-  - name: $dark_grey
+  - name: $dark-grey
     hex: '#707070' 
   - name: $main
     hex: '#2F3E51'

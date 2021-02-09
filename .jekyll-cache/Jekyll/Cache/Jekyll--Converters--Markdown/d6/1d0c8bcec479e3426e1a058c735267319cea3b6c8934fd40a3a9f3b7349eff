@@ -1,0 +1,150 @@
+I"^,
+<section class="sg_pattern" id="hall-of-fame-box">
+  <div class="title">
+    <a class="permalink" href="#hall-of-fame-box"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Hall of Fame Box</div> 
+    <div class="sg_label ready">ready</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="components/hall-of-fame.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/full/hall_of_fame.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/hall-of-fame.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hall-of-fame"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ site.baseurl }}/src/assets/images/icon__medal--silver.svg"</span> <span class="na">class=</span><span class="s">"icon__medal"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hall-of-fame__box"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ site.baseurl }}/src/assets/images/icon__camera.svg"</span> <span class="na">class=</span><span class="s">"hall-of-fame__upload"</span> <span class="nt">&gt;</span>
+
+        <span class="nt">&lt;h2&gt;</span>Unknown<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"p--highlight"</span><span class="nt">&gt;</span>Unknown<span class="nt">&lt;/p&gt;</span>
+
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"hall-of-fame__likes"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"{{ site.baseurl }}/src/assets/images/icon__like--filled.svg"</span> <span class="na">class= </span><span class="s">"icon__heart"</span><span class="nt">&gt;</span>
+            XXX likes
+        <span class="nt">&lt;/p&gt;</span>
+
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn__ghost btn__ghost--disabled"</span> <span class="na">state=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>See Full Post<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<p>Our <em>Hall of Fame</em> contains three of these boxes. The universal winners, disregarding the challenge, are displayed in the desired Hall of Fame. Naturally, the first place has the honor of receiving the gold medal, while place two and three get ahold of the silver and bronze one.</p>
+
+<section class="sg_pattern" id="countdown">
+  <div class="title">
+    <a class="permalink" href="#countdown"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Countdown</div> 
+    <div class="sg_label ready">ready</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="components/countdown.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/full/countdown.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/countdown.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"countdown"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Weeks<span class="nt">&lt;/p&gt;&lt;div&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Days<span class="nt">&lt;/p&gt;&lt;div&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Hours<span class="nt">&lt;/p&gt;&lt;div&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Mins<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h1--big"</span><span class="nt">&gt;</span>00<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h1--big"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h1--big"</span><span class="nt">&gt;</span>00<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h1--big"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h1--big"</span><span class="nt">&gt;</span>00<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h1--big"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h1--big"</span><span class="nt">&gt;</span>00<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<p>This is our countdown element and it displays when the next challenge expires.</p>
+
+<section class="sg_pattern" id="explanation-box">
+  <div class="title">
+    <a class="permalink" href="#explanation-box"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Explanation Box</div> 
+    <div class="sg_label ready">ready</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="components/explanation.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/full/explanation.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/explanation.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"explanation"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ site.baseurl }}/src/assets/images/icon__challenge.svg"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;hr&gt;</span>
+    <span class="nt">&lt;p&gt;</span>The principle is rather simple: <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p--highlight"</span><span class="nt">&gt;</span>challenges<span class="nt">&lt;/span&gt;</span> and the associated 
+    timeframe is posed that the users artistically have to implement. 
+    The topic is randomly chosen - to keep it short: be open for surprises.<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn__ghost"</span><span class="nt">&gt;</span>View Challenges<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<p>This is one of our three explanation boxes. In these boxes is information on how the site works and where to find posts and challenges.</p>
+
+<section class="sg_pattern" id="challenge-list">
+  <div class="title">
+    <a class="permalink" href="#challenge-list"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Challenge List</div> 
+    <div class="sg_label ready">ready</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="components/challenge_list.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/full/challenge_list.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/challenge_list.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"active-challenges"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Challenge title<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;div&gt;</span>
+        <span class="nt">&lt;p&gt;</span>01.01.2021<span class="nt">&lt;/p&gt;</span> 
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"p--small"</span><span class="nt">&gt;</span>XXX days left<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>     
+    
+    <span class="nt">&lt;div&gt;</span>
+        <span class="nt">&lt;p&gt;</span>10<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"a__small--underlined"</span><span class="nt">&gt;</span>see more<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>  
+
+    <span class="nt">&lt;div&gt;</span>
+        <span class="nt">&lt;p&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ site.baseurl }}/src/assets/images/icon__status--unsure.svg"</span> <span class="na">class=</span><span class="s">"icon__status"</span><span class="nt">&gt;</span>
+            not submitted
+        <span class="nt">&lt;/p&gt;</span>  
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn__ghost"</span> <span class="na">state=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Upload<span class="nt">&lt;/a&gt;</span>    
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<p>This is one of the list items where the active challenges are displayed. Here you can see the name of the challenge, when it ends, how many posts have already been uploaded, if you have submitted something or not and the upload button.</p>
+:ET

@@ -7,7 +7,9 @@ control: exclude
 <style>
   * {
     font-family: 'Roboto' !important;
+    color: #707070 !important;
     word-wrap: break-word;
+    padding: 0.2em;
   }
 </style>
 

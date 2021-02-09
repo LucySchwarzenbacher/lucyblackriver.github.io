@@ -1,7 +1,7 @@
 ---
 title: Roboto Highlight
 styles: abstracts/fonts.scss
-maturity: draft
+maturity: ready
 control: exclude
 ---
 <style>
@@ -10,7 +10,7 @@ control: exclude
     color: #4DCCAD !important;
     font-weight: 700;
     font-style: bold;
-
+    padding: 0.2em;
     word-wrap: break-word;
   }
 </style>

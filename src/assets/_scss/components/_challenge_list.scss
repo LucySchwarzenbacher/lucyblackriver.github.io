@@ -1,29 +1,71 @@
-.active_challenges {
-    &__item {
-        @include box--medium;
-        @include box__space--small;
-        @include challenges__item;
+.active-challenges {
+    @include box--medium;
+    @include box__space--small;
 
-        p {
-            margin: 0;
-        }
+    display: grid;
+    grid-template-columns: 2fr [challenge] 1fr [due] 1fr [uploads] 2fr [status] 1fr [action];
 
-        .btn__ghost {
-            min-width: 8em;
+    align-items: center;
 
-            height: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
 
-            margin: 0;
-        }
+    .challenge_title {
+        font-style: bold;
+        font-weight: 700;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .btn__ghost {
+        min-width: 8em;
+
+        height: fit-content;
+
+        margin: 0;
     }
 }
 
 @media #{$tablet} {
-    .active_challenges {
-        &__item {
-            .btn__ghost {
-                width: 6em;
-            }
+    .active-challenges {
+        .btn__ghost {
+            width: 6em;
         }
     }
-} 
+}
+
+@media #{$tablet_little} {
+    .active-challenges {
+        grid-template-columns: 1fr [due] 1fr [uploads] 1.5fr [status] 1fr [action];
+        grid-row-gap: 1em;
+    
+        .challenge_title {
+            grid-column: 1 / span 4;
+            text-align: center;
+        }
+    }
+}
+
+@media #{$mobile} {
+    .active-challenges {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 1em;
+
+        justify-items: center;
+
+        .challenge_title {
+            grid-column: 1 / span 2;
+        }
+
+        div {
+            text-align: center;
+        }
+        
+        div:nth-child(4),
+        .btn__ghost {
+            grid-column: 1 / span 2;
+        }
+    }
+}

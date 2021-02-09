@@ -1,4 +1,4 @@
-I"¿<style>
+I"ï¿½<style>
 .set {
   display: flex;
   flex-wrap: wrap;
@@ -35,7 +35,7 @@ p {
  
   <li>
     <div class="color" style="background:#707070"></div> 
-    <p>$dark_grey</p>
+    <p>$dark-grey</p>
     <p>#707070</p>
     
   </li>

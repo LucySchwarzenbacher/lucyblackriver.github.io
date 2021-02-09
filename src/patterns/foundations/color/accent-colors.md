@@ -6,7 +6,7 @@ control: exclude
 colors: 
   - name: $highlight
     hex: '#4DCCAD'  
-  - name: $light_green
+  - name: $light-green
     hex: '#ABE8B9'  
 ---
 <style>

@@ -5,6 +5,23 @@ info: Welcome to the Jekyll Style Guide.
 nav: false
 ---
 
+# Introduction
+
+## Groupmembers
+* Lucia Schwarzenbacher
+* Dominik Lugstein
+
+## Description
+The principle is rather simple: challenges and the associated timeframe is posed that the users artistically have to implement. The topic is randomly chosen - to keep it short: be open for surprises.
+
+In our rating system, all of the artworks and corresponding challenges are listed and waiting for you to be discovered! You can show others some love by leaving a like for their masterpieces. 
+
+Finally, the most liked posts are displayed in our virtual ranking and given the appreciation they deserve. We are eager to invite you to stumble over new-coming artists or even find talent and passion in yourself.
+
+
+## Targetgroup
+Colour Instinct is designed for creative masterminds and serves as a network for artists from all around the world. Even though there are numerous enormously talented people, only a few get the chance to share their art with others. Therefore, the main goal is that unnoticed artists receive the recognition they deserve. 
+
 # License 
 
 This tool is free for everyone to use, and modify, but don't try and sell it.

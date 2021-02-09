@@ -4,7 +4,7 @@ styles: base/variables.scss
 maturity: ready
 control: exclude
 colors: 
-  - name: $light_grey
+  - name: $light-grey
     hex: '#F8F7F7'  
   - name: $grey
     hex: '#B4B4B4'  

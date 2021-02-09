@@ -8,6 +8,8 @@ control: exclude
   * {
     font-family: 'Oswald' !important;
     word-wrap: break-word;
+    color: #2F3E51 !important;
+    padding: 0.2em;
   }
 </style>
 

@@ -1,0 +1,102 @@
+I"‡<p>We used Ruby on Rails for our Application and because Ruby on Rails mainly uses the button-tag to send a form, we opted for link-tags most of the time and gave them the button styles.</p>
+
+<p>In the examples below, the first button is a link-tag, the second is a button-tag.</p>
+
+<h1 id="main-buttons">Main Buttons</h1>
+
+<p>The main buttons in our application are used to login/logout and for the uploadform. For the login/logout buttons we used link-tags, for the form we used the button-tag.</p>
+
+<section class="sg_pattern" id="default-button">
+  <div class="title">
+    <a class="permalink" href="#default-button"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Default Button</div> 
+    <div class="sg_label ready">ready</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="components/button.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/button/default_button.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/button.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn__main"</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/a&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn__main"</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<p>The main buttons get bigger when you hover with your mouse and the mouse pointer will change.</p>
+
+<section class="sg_pattern" id="disabled-button">
+  <div class="title">
+    <a class="permalink" href="#disabled-button"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Disabled Button</div> 
+    <div class="sg_label ready">ready</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="components/button.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/button/disabled_button.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/button.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn__main"</span> <span class="na">state=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn__main"</span> <span class="na">state=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<p>A button can be disabled, pointer events will not occur.</p>
+
+<h1 id="ghost-buttons">Ghost Buttons</h1>
+
+<p>The ghost buttons are used in smaller elements of our application. For example to show idividual challenges or posts, or as a link to another page of the project. Like we did with the main buttons, we also mainly used link-tags and styled them accordingly. The only time we used a button-tag was on our filter-form.</p>
+
+<section class="sg_pattern" id="disabled-button">
+  <div class="title">
+    <a class="permalink" href="#disabled-button"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Disabled Button</div> 
+    <div class="sg_label ready">ready</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="components/button.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/button/default_ghost_button.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/button.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn__ghost"</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/Button&gt;&lt;button</span> <span class="na">class=</span><span class="s">"btn btn__ghost"</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<section class="sg_pattern" id="disabled-button">
+  <div class="title">
+    <a class="permalink" href="#disabled-button"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Disabled Button</div> 
+    <div class="sg_label ready">ready</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="components/button.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/button/disabled_ghost_button.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/button.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn__ghost"</span> <span class="na">state=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn__ghost"</span> <span class="na">state=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+:ET

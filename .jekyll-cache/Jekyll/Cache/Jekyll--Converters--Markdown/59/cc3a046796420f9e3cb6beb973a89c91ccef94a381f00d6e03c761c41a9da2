@@ -1,0 +1,31 @@
+I"D<h1 id="bem">BEM</h1>
+<p>Generally speaking, classes and identifiers in the project are in lowercase and english. Furthermore, the classes are declared according to the the BEM pattern. In other words, a class name follows the block__element-modifier syntax. This is not only helpful to establish a clear structure and hierarchy, but also assists in writing clean and tidy (S)CSS code.</p>
+
+<p>BEM is a component-based approach that divides the interface into independent blocks. The name of a BEM entity is unique and equal throughout the used technologies (CSS, JavaScript and HTML). The goal of the given names is to inform the developer about their content.</p>
+
+<p>Rules that are considered in the project:</p>
+<ul>
+  <li>names in lowercase</li>
+  <li>if a block is described by more than one word, use <code class="language-plaintext highlighter-rouge">_</code></li>
+  <li>the element name is separated from the block name by double underscore (<code class="language-plaintext highlighter-rouge">__</code>)</li>
+  <li>the modifier name is separated from the block name or element name by double hyphen (<code class="language-plaintext highlighter-rouge">--</code>)</li>
+</ul>
+
+<p>More information about BEM: http://getbem.com/introduction/<br />
+More information about Code Conventions: https://en.bem.info/methodology/naming-convention/</p>
+
+<p>Following inspired by: http://getbem.com/naming/</p>
+<h2 id="block">Block</h2>
+<h3 id="naming">Naming</h3>
+<p>Block names are in lowercase. If block is described by more than one word, use <code class="language-plaintext highlighter-rouge">_</code>. A prefix needs to be added to form a CSS class.
+Example:</p>
+<blockquote>
+  <p>.block</p>
+</blockquote>
+
+<h3 id="html">HTML</h3>
+<p>If DOM node accepts class name, it can classify as a DOM node.</p>
+<blockquote>
+  <div class="challenge"></div>
+</blockquote>
+:ET

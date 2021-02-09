@@ -8,8 +8,9 @@ control: exclude
   * {
     font-family: 'Roboto' !important;
     color: white !important;
-    background: #E0E0E0 !important;
+    background: #2F3E51 !important;
     word-wrap: break-word;
+    padding: 0.2em;
   }
 </style>
 

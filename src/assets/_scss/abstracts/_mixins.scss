@@ -1,30 +1,16 @@
-@import "../utils/variables";
-
-// general
-@mixin vertically-aligned {
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%,-50%);    
-}
-
+// --- GENERAL ---
 @mixin horizontally-aligned {
     margin-left: auto;
     margin-right: auto;
 }
 
-@mixin no-space {
-    margin: 0;
-    padding: 0;
-}
-
 @mixin border {
     border: solid 1.5px;
-    border-color: $dark_grey;
+    border-color: $dark-grey;
 }
 
 
-// icon in text
+// --- ICONS ---
 @mixin icon__text--max {
     max-width: 1rem;
 }
@@ -33,7 +19,8 @@
     padding-right: 0.5rem;
 }
 
-// space main
+
+// --- SPACE ---
 @mixin main__space {
     margin: auto;
     padding-left: 1em;
@@ -44,51 +31,8 @@
     padding-left: 1em;
 }
 
-// grid
-@mixin grid_layout {
-    &__grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
 
-        &__container {
-            @include box__space__margin;
-
-            place-self: center;
-
-            a {
-                display: inline-block;
-                width: 100%;
-            }
-
-            .img--squared {
-                @include img--squared(18em);
-            }
-        }
-    }
-}
-
-@mixin flex_layout {
-    &__grid {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-
-        &__container {
-            @include box__space__margin;
-
-            place-self: center;
-
-            .img--squared {
-                @include img--squared(18em);
-            }
-        }
-    }
-}
-
-
-// boxes
+// --- BOXES ---
 @mixin box {
     @include shadow;
 
@@ -102,6 +46,7 @@
     background-color: $white;
     border-radius: $border-radius-medium;
 }
+
 
 @mixin box__space {
     margin: 1em;
@@ -118,6 +63,7 @@
     padding: 0.5em;
 }
 
+
 @mixin box__space__margin {
     margin: 1em;
 }
@@ -126,9 +72,11 @@
     padding: 1em;
 }
 
+
 @mixin shadow {
     box-shadow: 3px 3px 10px rgb(180, 180, 180);
 }
+
 
 @mixin box__flash__position {
     z-index: 1;
@@ -141,52 +89,7 @@
     margin: 0;
 }
 
-@mixin challenges__item {
-    display: grid;
-    grid-template-columns: 2fr [challenge] 1fr [due] 1fr [uploads] 2fr [status] 1fr [action];
-
-    align-items: center;
-
-    padding-left: 1em;
-    padding-right: 1em;
-
-    .challenge_title {
-        font-style: bold;
-        font-weight: 700;
-    }
-
-    @media #{$tablet_little} {
-        grid-template-columns: 1fr [due] 1fr [uploads] 1.5fr [status] 1fr [action];
-        grid-row-gap: 1em;
-
-        .challenge_title {
-            grid-column: 1 / span 4;
-            text-align: center;
-        }
-    }
-
-    @media #{$mobile} {
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 1em;
-
-        justify-items: center;
-
-        .challenge_title {
-            grid-column: 1 / span 2;
-        }
-
-        div {
-            text-align: center;
-        }
-        
-        div:nth-child(4),
-        .btn__ghost {
-            grid-column: 1 / span 2;
-        }
-    }
-}
-
-// img
+// --- IMAGES ---
 @mixin img--circle($size) {
     @include shadow;
     
@@ -209,7 +112,7 @@
     object-fit: cover;
 }
 
-// heading
+// --- HEADING SPACES ---
 @mixin heading__space {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -220,6 +123,8 @@
     }
 }
 
+
+// --- TEXT ---
 @mixin h__space--small {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
@@ -233,10 +138,6 @@
 
 @mixin p__white--big {
     color: $white;
-    text-transform: uppercase;
-}
-
-@mixin p--big {
     text-transform: uppercase;
 }
 
@@ -323,7 +224,7 @@
     @include shadow;
 
     background-color: $white;
-    color: $dark_grey;
+    color: $dark-grey;
 
     @include border;
     border-radius: $border-radius-medium;
@@ -345,7 +246,7 @@
 }
 
 @mixin btn__ghost--disabled-style {
-    border-color: $dark_grey;
+    border-color: $dark-grey;
     background-color: $grey;
     color: $white;
     pointer-events: none;
@@ -362,136 +263,62 @@
         font-family: $text;
     }
 
-    // fonts:
+    // --- FONTS ---
     p,
     li,
     a {
         font-size: $p;
-        line-height: 1.5;
 
-        color: $dark_grey;
-    }
-
-    .p--highlight {
-        color: $highlight;
-        font-weight: 700;
-        font-style: bold;
+        color: $dark-grey;
     }
 
     .p--small {
         font-size: $p*0.9;
-        color: $grey;  
-    }
-
-    .p--big {
-        @include p--big;
-    }
-
-    .p__white--big {
-        @include p__white--big;
-    }
-
-
-    h1, h2, h3 {
-        font-family: $heading;
-        color: $main;
-        letter-spacing: 3px;
     }
 
     h1 {
-        @include heading__space;
-
         font-size: $h1;
-        text-transform: uppercase;
-
-        font-weight: 700;
     }
 
     .h1--big {
         font-size: $h1*1.1;
-        text-transform: uppercase;
-
-        font-style: bold;
-        font-weight: 500;
     }
 
     .ranking__grid__digits {
-        font-family: $heading;
         font-size: $h1*1.5;
-        color: $main;
-
-        text-transform: uppercase;
-
-        font-style: bold;
-        font-weight: 700; 
-
-        margin-right: 2rem;
     }
 
 
     h2 {
-        @include heading__space;
-
         font-size: $h2;
-
-        margin-top: 1rem;
-        margin-bottom: 1rem;
     }
 
-    .h2--highlight {
-        color: $highlight;
-    }
 
     h3 {
-        @include heading__space;
-
         font-size: $h3;
-        text-transform: uppercase;
-    }
-
-    .white {
-        color: white; 
     }
 
 
-    // components:
+    // --- COMPONENTS ---
     button {
         font-size: $p;
-        text-transform: uppercase;
     }
 
     .btn__main {
-        font-family: $heading;
         font-size: $h3;
     }
     
-    // links:
-    li {
-        list-style: none;
-    }
-
-    a {
-        color: $main;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-    
+    // --- LINKS --
     .a__small--underlined {
         font-size: $p*0.9;
-        color: $grey;
-
-        text-decoration: underline;
-        text-transform: unset;
     }
 
-
-    // table:
+    // --- TABLE ---
     table {
-        // font-family: $text;
         font-size: $p;
     }
 
-    // forms:
+    // --- FORMS ---
     label, 
     input,
     select, 
@@ -501,12 +328,6 @@
 
     input[type=submit] {
         font-size: $h3;
-    }
-
-
-    label {
-        @include p__white--big;
-        line-height: 1.5;
     }
 }
 

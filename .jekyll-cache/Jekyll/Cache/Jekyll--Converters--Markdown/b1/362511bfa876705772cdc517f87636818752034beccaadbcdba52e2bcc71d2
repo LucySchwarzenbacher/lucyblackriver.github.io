@@ -1,0 +1,24 @@
+I"Æ<p>We exclusively used labels in the upload form.</p>
+
+<section class="sg_pattern" id="label-and-input">
+  <div class="title">
+    <a class="permalink" href="#label-and-input"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Label and Input</div> 
+    <div class="sg_label ready">ready</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="Not Assigned">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/label/label.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="Not Assigned">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"Enter placeholder here"</span> <span class="na">id=</span><span class="s">"input"</span><span class="nt">&gt;&lt;/input&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+:ET

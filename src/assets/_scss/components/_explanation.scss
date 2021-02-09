@@ -1,24 +1,18 @@
 .explanation {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include box;
+    @include box__space;
 
-    &__box {
-        @include box;
-        @include box__space;
+    width: 20em;
 
-        width: 20em;
+    img {
+        display: block;
 
-        img {
-            display: block;
+        height: 7em;
 
-            height: 7em;
+        margin: auto;
+    }
 
-            margin: auto;
-        }
-
-        .btn__ghost {
-            @include horizontally-aligned;
-        }
+    .btn__ghost {
+        @include horizontally-aligned;
     }
 }

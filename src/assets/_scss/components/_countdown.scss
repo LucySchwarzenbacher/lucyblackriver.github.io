@@ -1,4 +1,4 @@
-.countdown__grid {
+.countdown {
     background-color: $main;
 
     max-width: 40em;
@@ -35,7 +35,7 @@
 }
 
 @media #{$mobile} {
-    .countdown__grid {
+    .countdown {
         h1:nth-child(even) {
             padding: 0.1em;
         }

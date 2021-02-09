@@ -1,9 +1,9 @@
 // --- FONTS AND SIZE ---
 body {
-    // font family
+    // --- FONT FAMILY ---
     @include font-family($text, $heading);
 
-    // font size
+    // --- FONT SIZE ---
     @include font-size(1.1rem, 3.6rem, 2.2rem, 1.5rem);
 
     @media #{$desktop_little} {
@@ -44,4 +44,117 @@ body {
         padding-bottom: 2em;
     }
 }
+
+
+// --- INDIVIDUAL ---
+a,
+p,
+li {
+    line-height: 1.5;
+    color: $dark-grey;
+}
+
+// p-Tag
+p {
+    &--small {
+        color: $grey;  
+    }
+
+    &--big {
+        text-transform: uppercase;
+    }
+
+    &__white--big {
+        @include p__white--big;
+    }
+
+    &--highlight {
+        @include bold;
+
+        color: $highlight;
+    }
+}
+
+// headings
+h1, 
+h2, 
+h3 {
+    color: $main;
+    letter-spacing: 3px;
+}
+
+h1 {
+    @include bold;
+    @include heading__space;
+
+    text-transform: uppercase;
+
+    &--big {
+        @include bold;
+    }
+}
+
+.ranking__grid__digits {
+    @include bold;
+
+    color: $main;
+    
+    text-transform: uppercase;
+    
+    margin-right: 2rem;
+}
+
+h2 {
+    @include heading__space;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    &--highlight {
+        color: $highlight; 
+    }
+}
+
+h3 {
+    @include heading__space;
+
+    text-transform: uppercase;
+}
+
+// white
+.white {
+    color: white; 
+}
+
+
+// list elements and links
+li {
+    list-style: none;
+}
+
+a {
+    color: $main;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.a__small--underlined {
+    color: $grey;
+
+    text-decoration: underline;
+    text-transform: unset;
+}
+
+
+// form elements
+label {
+    line-height: 1.5;
+    @include p__white--big; 
+}
+
+
+
+
+
+
 

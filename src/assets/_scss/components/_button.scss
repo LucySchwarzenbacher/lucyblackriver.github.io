@@ -1,3 +1,7 @@
+button {
+  text-transform: uppercase;
+}
+
 .btn {
   @include btn--reset-style;
   @include btn__text;
